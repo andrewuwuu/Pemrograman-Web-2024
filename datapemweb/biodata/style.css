@@ -1,0 +1,119 @@
+body{
+	font-family: monospace;
+	font-size: 13pt;
+	position: relative;
+}
+ 
+th{
+	text-align: left;
+}
+ 
+img{
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 50%;
+}
+ 
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url('Foto Profil.jpg') no-repeat center center fixed; 
+	background-size: cover;
+	filter: blur(8px);
+	z-index: -1;
+	background-attachment: scroll; /* Gambar latar belakang akan bergerak saat Anda menggulir halaman */
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+.kotak{
+	border: 1px solid black;
+	width: 70%;
+	margin: 10px auto;
+	padding: 20px;
+	background-color: #7fffd4;
+	background-color: rgba(127, 255, 212, 0.8); /* Menambahkan transparansi */
+	box-shadow: 2px 2px 2px #000;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+ 
+.judul{
+	text-align: center;
+	background: green;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 10px 10px 0 0;
+}
+ 
+.blok{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+ 
+.kiri{
+	width: 20%;
+	float: left;
+}
+ 
+.kanan{
+	width: 70%;
+	padding:0px 20px;	
+	float: left;
+}
+ 
+@media only screen and (max-width: 768px) {
+	.kotak{
+		width: 90%;
+		padding: 10px;
+	    border: 1px solid black;
+	    box-shadow: 2px 2px 2px #000;
+	    border-radius: 10px;
+	}
+	
+	.kiri{
+		width: 40%;
+	}
+ 
+	.kanan{
+		width: 80%;
+		padding: 0;
+	}
+}
+
+/* CSS untuk tabel pendidikan */
+.pendidikan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.pendidikan th, .pendidikan td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+.pendidikan th {
+    background-color: #40e0d0;
+}
+
+.pendidikan tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.pendidikan tr:hover {
+    background-color: #b3b3b3;
+    transition: all 0.3s ease;
+}
+
+.pendidikan td {
+    background-color: #fffaf0;
+}

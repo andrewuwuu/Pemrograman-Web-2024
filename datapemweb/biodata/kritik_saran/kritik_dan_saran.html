@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kritik dan Saran - Zain Ilmi</title>
+	<link rel="stylesheet" type="text/css" href="kritik_dan_saran.css">
+</head>
+<body>
+    <div class="background"></div>
+	<div class="kotak">
+		<div class="judul">
+			<h1>Kritik dan Saran</h1>
+		</div>
+		<div class="blok">
+			<form action="simpandata.php" method="POST">
+				<div class="form-group">
+					<input type="text" id="name" name="name" placeholder="Nama"><br>
+				</div>
+				<div class="form-group">
+					<input type="text" id="mail" name="mail" placeholder="Email"><br>
+				</div>
+				<div class="form-group">
+					<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Kritik / Saran"></textarea><br><br>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Kirim">
+					<input type="reset" value="Reset">
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

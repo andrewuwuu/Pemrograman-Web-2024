@@ -1,0 +1,56 @@
+body{
+	font-family: monospace;
+	font-size: 13pt;
+	position: relative;
+}
+
+.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url('Foto Profil.jpg') no-repeat center center fixed; 
+	background-size: cover;
+	filter: blur(8px);
+	z-index: -1;
+}
+
+.kotak{
+	border: 1px solid black;
+	width: 80%; /* Mengurangi ukuran kotak */
+	margin: 10px auto;
+	padding: 20px;
+	background-color: rgba(62, 254, 255, 0.5); /* Menambahkan transparansi */
+	box-shadow: 2px 2px 2px #000;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.judul{
+	text-align: center;
+	background: darkblue;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 10px 10px 0 0;
+	font-size: 13pt; /* Mengurangi ukuran font judul */
+}
+
+.blok{
+	margin-bottom: 20px;
+}
+
+.gambar img {
+	width: 100%;
+}
+
+.keterangan {
+	padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.kotak{
+		width: 50%; /* Mengubah ukuran kotak untuk layar yang lebih besar */
+	}
+}
